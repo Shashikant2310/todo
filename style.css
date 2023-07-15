@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+h1{
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: rgb(188, 145, 231);
+    text-align: center;
+}
+.container{
+    display: flex;
+}
+#input{
+    flex-grow: 1;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(248, 248, 248);
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem; 
+    padding: 12px 12px;
+    /* margin-bottom: 10px; */
+    font-family: sans-serif;
+    display: inline-block;
+}
+#input::placeholder{
+    color: #d5d5d5;
+}
+#btn{
+    color: black;
+    border: none;
+    font-family: sans-serif;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 5px 10px;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+#btn:hover{
+    color: white;
+    background-color: skyblue;
+    border-radius: 2px;
+}
+#todos{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#todos li{
+    /* width: 300px; */
+    border-top: 1px solid rgb(207, 205, 205);
+    font-size: 1rem;
+    padding: 1rem;
+    font-family: sans-serif;
+    line-height: 1.5;
+    position: relative;
+}
+
+#todos li.completed{
+    text-decoration: line-through;
+    cursor: pointer;
+    color: #b5b5b5;
+}
+#todos li span{
+position: absolute;
+top: 10px;
+right: 10px;
+width: 30px;
+height: 30px;
+font-size: 1.5rem;
+font-weight: 300;
+color: grey;
+text-align: center;
+user-select: none;
+cursor: pointer;
+}
